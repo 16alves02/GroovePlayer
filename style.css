@@ -1,0 +1,162 @@
+/* Reset default styles and set the font family */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Styling for the entire page */
+body {
+    background-color: #FFA500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Styling for the main container */
+.container {
+    text-align: center;
+}
+
+/* Styling for the music player card */
+.music-player {
+    background-color: #8a3299;
+    width: 400px;
+    padding: 25px 35px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+
+/* Styling for the navigation bar */
+.nav {
+    display: flex;
+    justify-content: space between;
+    margin-bottom: 30px;
+}
+
+/* Styling for circular navigation buttons */
+.nav .circle {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: #fff;
+    color: #FFA500;
+    box-shadow: 0 5px 10px #997532;
+}
+
+/* Styling for the song image */
+.song-img {
+    width: 220px;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    box-shadow: 0 10px 60px #997532;
+}
+
+/* Styling for the song title */
+h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+/* Styling for additional text (e.g., artist name) */
+p {
+    font-size: 14px;
+    color: #FFA500;
+}
+
+/* Styling for the progress bar */
+#progress {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    background: #f53192;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 40px 0;
+}
+
+/* Styling for the progress bar thumb */
+#progress::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 30px;
+    height: 30px;
+    background: #f53192;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    box-shadow: 0 5px 5px #997532;
+}
+
+/* Styling for the music player control buttons */
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling for individual control buttons */
+.controls div {
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+    background: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #FFA500;
+    box-shadow: 0 10px 20px #997532;
+    cursor: pointer;
+}
+
+/* Styling for the central play/pause button */
+.controls div:nth-child(2) {
+    transform: scale(1.5);
+    background: #FFA500;
+    color: #fff;
+}
+
+/* Styling for the GitHub link */
+.music-player .github-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 2px;
+}
+
+/* Styling for the GitHub link on hover */
+.music-player .github-link:hover {
+    border-bottom: 2px solid #fff;
+}
+
+/* Styling for control icons (play, pause, etc.) */
+.controls i {
+    font-size: 16px;
+    width: 40px;
+    height: 40px;
+}
+
+/* Positioning the "bars" icon on the right and the "left angle" icon on the left */
+.nav .circle i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+}
+
+/* Align the "left angle" icon to the left and the "bars" icon to the right */
+.nav .circle:first-child i {
+    margin-right: auto;
+}
+
+.nav .circle:last-child i {
+    margin-left: auto;
+}
